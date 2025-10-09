@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1.2 CSS Syntax & Selectors Basics</title>
+    <style>
+        /* selector{
+            property: value;
+            property: value;
+        } */
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        /* body{
+            font-family: Arial, Helvetica, sans-serif;
+        } */
+        h1{
+            color:blue;
+            font-size: 32px;
+        }
+
+        p {
+            font-size: 16px;
+            color:brown;
+        }
+        div {
+            background-color: yellow;
+        }
+        .highlight {
+            background-color: yellow;
+            font-weight: bold;
+            color:blue;
+        }
+        #header {
+            background: navy;
+            color:white;
+        }
+        #footer {
+            background: gray;
+            color:white;
+        }
+    </style>
+</head>
+<body>
+    <h1>Hello World</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut officiis ad expedita ex sint eius assumenda repellendus deserunt? Aut, dolor?</p>
+    <div>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi suscipit repudiandae consectetur at quod ipsa, molestias aliquid harum rem quos non consequuntur nemo et similique, veritatis, excepturi pariatur. Natus, fugiat.</div>
+
+
+    <p class="highlight">This is text highlighter</p>
+
+    <div id="header">This is header</div>
+    <div id="footer">This is footer</div>
+</body>
+</html>
