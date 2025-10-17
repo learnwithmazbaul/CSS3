@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1.6 Border & Spacing</title>
+
+    <style>
+        .div {
+            /* border-width: 5px;
+            border-style: solid;
+            border-color:red; */
+
+            border:5px solid red;
+            margin-bottom: 10px;
+        }
+        .box{
+            border: 5px solid red;
+            border-radius: 15px;
+            padding:10px;
+        }
+        .circle{
+            background-color: indigo;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            border:none;
+        }
+
+        .card {
+            border:none;
+            background-color: indigo;
+            color:white;
+            padding:10px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .btn{
+            outline: 2px solid blue;
+            outline-offset: 2px;
+            background-color: indigo;
+            color:white;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+    <div class="div">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Placeat, consequuntur?</div>
+
+    <div class="box">Lorem ipsum dolor sit amet.</div>
+
+    <div class="circle"></div>
+    <br>
+
+    <div class="card">
+        This is a card
+    </div>
+
+    <br>
+
+    <button class="btn">Click</button>
+</body>
+</html>
