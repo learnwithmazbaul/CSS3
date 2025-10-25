@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1.9 CSS Positioning Fundamentals</title>
+    <style>
+        /* selector{
+            position: static, relative, absolute, fixed, sticky;
+            top: value;
+            left: value;
+            right: value;
+            bottom: value;
+        } */
+        .static {
+            position: static;
+            width: 100px;
+            height: 100px;
+            background: lightblue;
+            /* margin-bottom: 20px; */
+        }
+
+        .relative {
+            position: relative;
+            width: 150px;
+            height: 150px;
+            background: orange;
+            top: 20px;
+            left: 20px;
+            margin-bottom: 20px;
+        }
+
+        .parent {
+            position: relative;
+            /* relative to parent */
+            width: 300px;
+            height: 300px;
+            background: lightgray;
+            margin-bottom: 20px;
+        }
+
+        .child {
+            position: absolute;
+            /* relative to parent */
+            width: 100px;
+            height: 100px;
+            background: tomato;
+            top: 50px;
+            left: 50px;
+        }
+
+        .fixed {
+            position: fixed;
+            top: 0px;
+            right: 0px;
+            background: navy;
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        .sticky {
+            position: sticky;
+            top: 0px;
+            background: lightgreen;
+            padding: 10px;
+            border-radius: 5px
+        }
+        .container{
+            position: relative;
+            width: 400px;
+            height: 400px;
+            background: lightgray;
+        }
+        .box1 {
+            width: 200px;
+            height: 200px;
+            background: lightblue;
+            padding: 10px;
+            border-radius: 5px;
+            position: absolute;
+            top:50px;
+            left: 50px;
+            z-index: 3;
+        }
+
+        .box2 {
+            width: 200px;
+            height: 200px;
+            background: lightgreen;
+            padding: 10px;
+            border-radius: 5px;
+            position: absolute;
+            z-index: 2;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="sticky">I'm sticky</div>
+
+    <div class="box static">Static box</div>
+    <div class="box relative">Relative box</div>
+
+    <div class="parent">
+        <div class="child">Absolute box</div>
+    </div>
+    <br><br>
+
+    <div class="fixed">I stay fixed</div>
+
+    <br><br>
+
+    <div class="container">
+        <div class="box1">box1</div>
+        <div class="box2">box2</div>
+    </div>
+
+</body>
+
+</html>
