@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS floats and clear</title>
+    <style>
+        .container{
+            width:100%;
+            border:1px solid #999;
+            padding:10px;
+            margin:20px auto;
+        }
+
+        .box{
+            width:48%;
+            background: #e9f5ff;
+            border: 1px solid #ccc;
+            padding: 10px;
+            box-sizing: border-box;
+            float: left;
+            margin:1%;
+        }
+        .footer{
+            background-color: #333;
+            color:white;
+            padding:10px;
+            clear: both;
+            text-align: center;
+        }
+        .clearfix::after{
+            content: "";
+            display: block;
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center;">Float & Clear</h1>
+
+    <div class="container clearfix">
+        <div class="box">
+            <h3>Left box</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est temporibus repudiandae fugit doloremque. Obcaecati quasi optio velit odit, saepe dolores.</p>
+        </div>
+        <div class="box">
+            <h3>Right box</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est temporibus repudiandae fugit doloremque. Obcaecati quasi optio velit odit, saepe dolores.</p>
+        </div>
+        <div class="footer">
+            This is footer section
+        </div>
+    </div>
+</body>
+</html>
