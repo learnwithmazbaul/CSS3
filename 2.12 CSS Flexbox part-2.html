@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css flexbox part-2</title>
+
+    <style>
+        .container{
+            display: flex;
+            gap:20px;
+        }
+        .sidebar{
+            flex-basis: 250px; 
+            background: lightgreen;
+        }
+        .content{
+            flex-grow:1;
+            background: lightblue;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">Sidebar</div>
+        <div class="content">Content</div>
+    </div>
+
+</body>
+</html>
