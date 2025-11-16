@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Layout Comparison</title>
+    <style>
+        /* body{
+            margin:0px;
+            padding: 0px;
+            outline: none;
+        } */
+        .dashboard{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: 120px 300px 200px;
+            gap:20px;
+        }
+        .stat-card{
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .chart-large{
+            grid-column: span 2;
+            background: #f8f9fa;
+            border-radius: 8px;
+            padding: 20px;
+        }
+        .chart-small{
+            background: #e9ecef;
+            border-radius: 8px;
+            padding: 20px;
+        }
+        .recent-activity{
+            grid-column: span 3;
+            background-color: #cf4646;
+            border-radius: 8px;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="dashboard">
+        <div class="stat-card">Users: 1,234</div>
+        <div class="stat-card">Orders: 567</div>
+        <div class="stat-card">Revenue: $12,345</div>
+        <div class="chart-large">Sales Chart</div>
+        <div class="chart-small">Traffic Chart</div>
+        <div class="recent-activity">Recent Activities</div>
+    </div>
+</body>
+
+</html>
